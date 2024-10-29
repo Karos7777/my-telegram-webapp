@@ -5,7 +5,7 @@ import json
 import os
 
 # Замените 'YOUR_TELEGRAM_BOT_TOKEN' на ваш новый токен
-TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+TOKEN = '7211622201:AAFXjJYCoFbiDMTaOX5BZ_haXziiHxjOi7Y'
 
 user_tokens = {}
 user_last_claim = {}
@@ -30,7 +30,7 @@ def load_data():
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("Открыть игру", web_app=WebAppInfo(url="https://your-web-app-url.com"))]
+        [InlineKeyboardButton("Открыть игру", web_app=WebAppInfo(url="https://karos7777.github.io/my-telegram-webapp/"))]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("Привет! Добро пожаловать в игру по фарму токенов.", reply_markup=reply_markup)
